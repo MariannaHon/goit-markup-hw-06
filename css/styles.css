@@ -4,7 +4,73 @@ body {
     background-color: #FFF;
 }
 
-.title-middle {
+/* Basic */
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,і
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Mobile */
+
+.nav-mobile-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 320px;
+    min-height: 640px;
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+}
+
+.nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibilit250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-mobile.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* .title-middle {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -26,7 +92,7 @@ body {
     padding-bottom: 120px;
 }
 
-/* Logo */
+
 
 .navigation .logo .black {
     color:#2E2F42;
@@ -56,8 +122,7 @@ body {
 
 }
 
-/* Header */
-/* Navigation */
+
 
 .menu {
     border-bottom: 1px solid #e7e9fc;
@@ -122,7 +187,7 @@ header .container {
     background-color: #404BBF;
 }
 
-/* Contacts */
+
 .contacts {
     color:#434455;
     font-size: 16px;
@@ -147,28 +212,12 @@ header .container {
 }
 .contacts:focus {
     color:#404BBF;
-}
-/* Basic */
-ul, ol {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-}
-a {
-    text-decoration: none;
-}
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+} */
+
 
 /* Section 1 */
 
-.block .container {
+/* .block .container {
     width: 100%;
     flex-shrink: 0;
 }
@@ -224,7 +273,7 @@ img {
 .button:focus {
     background: #404BBF;
 }
-/* Section 2 (Benefits) */
+
 
 .hiding {
     position: absolute;
@@ -239,7 +288,7 @@ img {
     overflow: hidden;
 }
 
-/* Icons benefits */
+
 
 
 .list-benefits {
@@ -281,7 +330,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-/* Section 3 (Team) */
+
 
 .block-second .container {
     width: 1158px;
@@ -343,7 +392,7 @@ img {
 .item-team-icons {
     width: 40px;
     height: 40px;
-    margin-top: 8px;             /*  Тут решение с отступом для иконок в тимс */
+    margin-top: 8px;            
 } 
 
 .link-team-icons {
@@ -371,7 +420,7 @@ img {
     fill: #F4F4FD;
 }
 
-/* Portfolio */
+
 
 
 .list-portfolio {
@@ -455,7 +504,7 @@ img {
     letter-spacing: 0.02em;
 }
 
-/* Footer */
+
 
 .bottom-content {
     display: flex;
@@ -581,7 +630,7 @@ input::placeholder {
     margin-left: 16px;
 }
 
-/* ================= Modal ================= */
+
 
 .form-container {
     position: absolute;
@@ -597,7 +646,7 @@ input::placeholder {
     padding: 72px 24px 24px 24px;
 }
 
-/* ===============Button-close ===============*/
+
 
 .button-close {
     position: absolute;
@@ -641,7 +690,7 @@ input::placeholder {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ===================== Title ========================= */
+
 
 .title-input {
     color: #2E2F42;
@@ -664,7 +713,7 @@ input::placeholder {
 }
 
 
-/* =========================== Form ============================= */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -839,4 +888,4 @@ input:checked+.check>.span-icon {
     border: none;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */

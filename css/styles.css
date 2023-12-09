@@ -127,6 +127,8 @@ img {
     text-align: center;
     color: #2e2f42;
     margin-bottom: 72px;
+    margin-top: 0;
+    text-transform: capitalize;
 }
 
 /* ================ Team ================= */
@@ -588,16 +590,6 @@ input:checked+.check>.span-icon {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .block {
-        background-image: linear-gradient(to bottom,
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-            url(../images/dark-2x.jpg);
-    }
-}
 
 /* ============================ Mobile version ============================= */
 
@@ -607,6 +599,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         max-width: 320px;
         padding: 0 16px;
         margin: 0 auto;
+    }
+
+    .menu {
+        padding-top: 17.5px;
+        padding-bottom: 17.5px;
     }
 
     .hiding-mobile {
@@ -646,11 +643,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
         overflow: hidden;
-    }
-
-    .navigation {
-        padding-top: 17.5px;
-        padding-bottom: 17.5px;
     }
 
     /*================== Navigation Mobile ===================*/
@@ -858,7 +850,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/people-office.jpg);
+            url(../images/dark.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -929,10 +921,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
     .block-second {
         background-color: #F4F4FD;
-    }
-
-    .title-middle {
-    text-transform: capitalize;
+        max-width: 296px;
     }
 
     .list-team {
@@ -943,13 +932,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     }
 
     .item {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-basis: calc((100% - 72px) / 4);
         gap: 32px;
-        width: 264px;
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
         border-radius: 0px 0px 4px 4px;
         background-color: #FFFFFF;
@@ -961,10 +947,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         display: flex;
         flex-direction: column;
         gap: 48px;
-        margin: 0 16px;
     }
     .item-portfolio {
-        flex-basis: calc((100% - 240px) / 6);
         padding-bottom: 0px;
         flex-direction: column;
         align-items: flex-start;
@@ -1021,17 +1005,19 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         display: inline-flex;
         align-items: center;
         margin-left: 25%;
-        margin-bottom: 16px;
     }
 
     .bottom .paragraf {
         text-align: start;
-        margin-bottom: 72px;
         max-width: 288px;
     }
 
+    .first-part-bottom {
+        gap: 16px;
+        margin-bottom: 72px;
+    }
+
     .media {
-        display: flex;
         align-items: center;
         text-align: center;
         flex-direction: column;
@@ -1070,6 +1056,37 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         color: #FFF;
     }
 
+    .form-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-bottom {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        border-radius: 4px;
+        background: #4D5AE5;
+        font-family: "Roboto", sans-serif;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        justify-content: center;
+        min-width: 165px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .icon-button {
+        fill: #FFFFFF;
+        margin-left: 16px;
+    }
+
     /* ============= Modal ============= */
 
     .form-container {
@@ -1103,8 +1120,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .navigation {
         display: flex;
         align-items: center;
-        padding-top: 24px;
-        padding-bottom: 24px;
     }
 
     .logo {
@@ -1133,6 +1148,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
     .button-nav {
         display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
@@ -1206,7 +1223,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         background-image: linear-gradient(to bottom, 
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-        url(../images/people-office.jpg);
+        url(../images/dark-tablet.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1266,10 +1283,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         overflow: hidden;
     }
 
-    .block-benefits {
-        max-width: 736px;
-    }
-
     .list-benefits {
         gap: 24px;
         row-gap: 72px;
@@ -1310,14 +1323,18 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         background-color: #F4F4FD;
     }
 
+    .block-second .container {
+        width: 584px;
+    }
+
     .list-team {
         display: inline-flex;
         align-items: center;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 64px;
         flex-wrap: wrap;
-        margin-left: 108px;
-        margin-right: 108px;
     }
+
     .item {
         width: calc((100% - 24px) / 2);
     }
@@ -1341,11 +1358,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
+        width: 584px;
     }
     .first-part-bottom {
         display: flex;
         flex-direction: column;
-        margin-left: 108px;
         margin-right: 24px;
         margin-bottom: 72px;
     }
@@ -1362,7 +1379,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
     .third-part-bottom {
         display: inline-block;
-        margin-left: 108px;
     }
 
     .form-bottom {
@@ -1704,4 +1720,37 @@ input::placeholder {
     color: #FFF;
 }
 
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .block {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office@2x.jpg);
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .block {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/dark-tablet@2x.jpg);
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .block {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/dark@2x.jpg);
+    }
 }

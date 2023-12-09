@@ -602,8 +602,7 @@ input:checked+.check>.span-icon {
     }
 
     .menu {
-        padding-top: 17.5px;
-        padding-bottom: 17.5px;
+        padding: 17.5px 16px;
     }
 
     .hiding-mobile {

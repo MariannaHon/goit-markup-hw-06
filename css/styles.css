@@ -590,62 +590,24 @@ input:checked+.check>.span-icon {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-/* ============================ Mobile version ============================= */
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-
-    .container {
-        max-width: 320px;
-        padding: 0 16px;
-        margin: 0 auto;
-    }
-
-    .menu {
-        padding: 17.5px 16px;
-    }
-
-    .hiding-mobile {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
-
-    .hiding-icons {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
-
-    .hiding-title {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
-
     /*================== Navigation Mobile ===================*/
 
+    .nav-mobile {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 320px;
+        min-height: 640px;
+        background: #fcfcfc;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 72px 24px 24px 24px;
+    }
+    
     .nav-mobile-container {
         position: fixed;
         top: 0;
@@ -664,22 +626,6 @@ input:checked+.check>.span-icon {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
-    }
-
-    .nav-mobile {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        width: 320px;
-        min-height: 640px;
-        background: #fcfcfc;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 1px 3px rgba(0, 0, 0, 0.12),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 72px 24px 24px 24px;
     }
 
     .icon-menu {
@@ -727,7 +673,7 @@ input:checked+.check>.span-icon {
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .list-nav {
+    .list-nav-mobile {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -779,7 +725,7 @@ input:checked+.check>.span-icon {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-    .list-contacts {
+    .list-contacts-mobile {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -841,6 +787,68 @@ input:checked+.check>.span-icon {
         fill: #F4F4FD;
     }
 
+
+/* ============================ Mobile version ============================= */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .container {
+        max-width: 320px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    .menu {
+        padding: 17.5px 0;
+    }
+
+    .list-nav {
+        display: none;
+    }
+
+    .list-contacts {
+        display: none;
+    }
+
+    .hiding-mobile {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .hiding-icons {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .hiding-title {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
     /* ================== Title ================== */
 
     .block {
@@ -866,8 +874,8 @@ input:checked+.check>.span-icon {
         letter-spacing: 0.02em;
         text-transform: capitalize;
         text-align: center;
-        max-width: 288px;
-        margin: 0 16px;
+        max-width: 222px;
+        margin: 0 auto;
     }
 
     /* ================== Benefits =================== */
@@ -920,6 +928,9 @@ input:checked+.check>.span-icon {
 
     .block-second {
         background-color: #F4F4FD;
+    }
+
+    .block-second .container {
         max-width: 296px;
     }
 
@@ -1102,6 +1113,15 @@ input:checked+.check>.span-icon {
     padding: 72px 16px 24px 16px;
     }
 
+    .check {
+        display: flex;
+        align-items: center;
+    }
+
+    .link-paragraf {
+        margin-left: 0;
+    }
+
 }
 
 /* ===================== Tablet version ====================== */
@@ -1112,6 +1132,10 @@ input:checked+.check>.span-icon {
         max-width: 768px;
         padding: 0 16px;
         margin: 0 auto;
+    }
+
+    .menu-mobile-button {
+        display: none;
     }
 
     /* ================= Header ================== */
@@ -1426,6 +1450,10 @@ input:checked+.check>.span-icon {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.menu-mobile-button {
+    display: none;
 }
 
 .container {

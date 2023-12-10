@@ -628,6 +628,14 @@ input:checked+.check>.span-icon {
         pointer-events: auto;
     }
 
+    .menu-mobile-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+        stroke: #2F2F37;
+    }
+
     .icon-menu {
         position: absolute;
         top: 16px;

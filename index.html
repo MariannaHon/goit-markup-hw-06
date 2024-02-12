@@ -125,7 +125,7 @@
             <section class="block">
                 <div class="container">
                     <h1 class="title">Effective Solutions for Your Business</h1>
-                    <button type="button" class="button">Order Service</button>
+                    <button type="button" class="button" id="open-button">Order Service</button>
                 </div>
             </section>
 
@@ -570,14 +570,14 @@
         </footer>
         
         <div class="backdrop">
-            <div class="form-container">
-                <button type="button" class="button-close">
+            <div class="form-container" id="form-container">
+                <button type="button" class="button-close" id="button-close">
                     <svg class="icon-button-close" width="8" height="8">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
                 <p class="title-input">Leave your contacts and we will call you back</p>
-                <form class="input-form" id="input-form" name="input-form" autofocus novalidate>
+                <form action="#" class="input-form" id="input-form" name="input-form" netlify autofocus novalidate>
                     <div class="label-container">
                         <label for="user-name" class="text-inputs">Name</label>
                         <div class="input-container">
@@ -633,11 +633,13 @@
                             </span>
                         </label>
                     </div>
-                    <button type="submit" class="button-send">
+                    <button type="submit" class="button-send" id="send">
                         <span class="paragraf-send">Send</span>
                     </button>
                 </form>
             </div>
         </div> 
+        <script type="module" src="js/form.js"></script>
+        <script type="module" src="js/close-open.js"></script>
     </body>
 </html>
